@@ -1,0 +1,72 @@
+:root {
+    --color1: #a3c1ad;
+    --color2: #a0d6b4;
+    --color3: #5f9ea0;
+    --color4: #317873;
+}
+
+#container {
+    display: grid;
+    grid-template-areas:
+        'header header '
+        'form1 form2 '
+        'form1 form2 '
+        'form1 form2 '
+}
+
+#form1 {
+    grid-area: form1;
+    background-color: var(--color1);
+    padding: 20px;
+    margin: 30px;
+}
+
+#form2 {
+    grid-area: form2;
+    background-color: var(--color2);
+    padding: 20px;
+    margin: 30px;
+}
+
+#header {
+    text-align: center;
+    grid-area: header;
+    background-color: var(--color3);
+    padding: 20px;
+    margin: 30px;
+}
+
+
+label {
+}
+
+
+
+h3, h1 {
+    color: black
+}
+
+h3 {
+    text-align: center;
+}
+
+body {
+    background-color: var(--color4)
+}
+
+.intro{
+    text-align: center;
+    color: red;
+}
+
+
+form {
+    overflow: hidden;
+}
+
+
+input, textarea {
+    float: right;
+    clear: both;
+}
+
