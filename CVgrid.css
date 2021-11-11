@@ -1,0 +1,89 @@
+:root {
+    --color1: #a3c1ad;
+    --color2: #a0d6b4;
+    --color3: #5f9ea0;
+    --color4: #317873;
+}
+
+
+#container {
+    display: grid;
+    grid-template-areas:
+        'header header header '
+        ' Education Education  Experience'
+        'Education Education Experience  '
+        'Skills Languages Experience'
+}
+
+body{
+    background-color: var(--color4);
+}
+
+@media only screen and (max-width: 1000px){
+    body {
+        background-color: black;
+    }
+
+}
+
+
+#headerLan {
+    text-align: left;
+    grid-area: headerLan;
+}
+
+#bodyLan {
+    text-align: left;
+    grid-area: bodyLan;
+}
+
+
+#header {
+    text-align: center;
+    grid-area: header;
+    background-color: var(--color1);
+    padding: 20px;
+    margin: 30px;
+}
+
+#Summary {
+    text-align: center;
+    grid-area: Summary;
+    background-color: var(--color3);
+    padding: 20px;
+    margin: 30px;
+}
+#Education {
+    text-align: left;
+    grid-area: Education;
+    background-color: var(--color3);
+    padding: 20px;
+    margin: 30px;
+}
+
+#Experience {
+    text-align: left;
+    grid-area: Experience;
+    background-color: var(--color3);
+    padding: 20px;
+    margin: 30px;
+}
+
+#Skills {
+    text-align: left;
+    grid-area: Skills;
+    background-color: var(--color3);
+    padding: 20px;
+    margin: 30px;
+}
+#Languages {
+    text-align: center;
+    grid-area: Languages;
+    display: grid;
+    grid-template-areas:
+        'headerLan headerLan'
+        'bodyLan bodyLan';
+    background-color: var(--color3);
+    padding: 20px;
+    margin: 30px;
+}
