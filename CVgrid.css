@@ -50,6 +50,7 @@ body{
     text-align: center;
     grid-area: Summary;
     background-color: var(--color3);
+    animation-name: summary_animation;
     padding: 20px;
     margin: 30px;
 }
@@ -59,12 +60,15 @@ body{
     background-color: var(--color3);
     padding: 20px;
     margin: 30px;
+    animation-name: Education;
+    animation-duration: 4s;
 }
 
 #Experience {
     text-align: left;
     grid-area: Experience;
     background-color: var(--color3);
+    animation-name: important1;
     padding: 20px;
     margin: 30px;
 }
@@ -87,3 +91,12 @@ body{
     padding: 20px;
     margin: 30px;
 }
+
+@keyframes Education {
+    from {background-color: red;}
+    to {background-color: blue;}
+}
+
+
+
+
