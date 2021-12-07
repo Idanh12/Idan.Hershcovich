@@ -9,10 +9,20 @@
 #container {
     display: grid;
     grid-template-areas:
-        'header header header '
-        ' Education Education  Experience'
-        'Education Education Experience  '
+        'Links header header'
+        'Education Education Experience'
+        'Education Education Experience'
         'Skills Languages Experience'
+        'contactus contactus contactus'
+
+}
+
+.contact_us{
+    text-align: center;
+    grid-area: contactus;
+    background-color: var(--color1);
+    padding: 20px;
+    margin: 30px;
 }
 
 body{
@@ -26,6 +36,15 @@ body{
 
 }
 
+.intro_phrase {
+    grid-area: Links;
+    margin-bottom: 1%;
+}
+
+.Button {
+    grid-area: Languages;
+    margin-bottom: 1%;
+}
 
 #headerLan {
     text-align: left;
@@ -37,6 +56,14 @@ body{
     grid-area: bodyLan;
 }
 
+
+#Links {
+    text-align: center;
+    grid-area: Links;
+    background-color: var(--color1);
+    padding: 20px;
+    margin: 30px;
+}
 
 #header {
     text-align: center;
